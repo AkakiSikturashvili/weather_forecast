@@ -1,0 +1,32 @@
+{
+	"folders": [
+		{
+			"name": "📦 Root Project",
+			"path": "."
+		},
+		{
+			"name": "📂 Core Apps",
+			"path": "apps"
+		},
+		{
+			"name": "⚙️ Config & Settings",
+			"path": "config"
+		},
+		{
+			"name": "🎨 Templates",
+			"path": "templates"
+		}
+	],
+	"settings": {
+		"python.analysis.extraPaths": [
+			"./apps"
+		],
+		"python.terminal.activateEnvInCurrentTerminal": true,
+		"files.exclude": {
+			"**/*.pyc": true,
+			"**/__pycache__": true,
+			"**/.DS_Store": true
+		},
+		"editor.formatOnSave": true
+	}
+}

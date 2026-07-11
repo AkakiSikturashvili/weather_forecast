@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}წაშლის დადასტურება{% endblock %}
+{% block content %}
+<h2>დარწმუნებული ხართ?</h2>
+<p>გსურთ წაშალოთ ლოკაცია <strong>{{ object }}</strong>?</p>
+<form method="post">
+    {% csrf_token %}
+    <button type="submit" class="btn btn-danger">დიახ, წაშლა</button>
+    <a href="{% url 'weather:location-list' %}" class="btn btn-secondary">გაუქმება</a>
+</form>
+{% endblock %}
